@@ -1,0 +1,25 @@
+# if not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# set text editor to vim
+export EDITOR=vim
+export VISUAL=vim
+
+# remove all but last identical command
+export HISTCONTROL=erasedups
+
+# extend bash history size
+HISTSIZE=1000
+HISTFILESIZE=1000
+
+# change directory without typing cd
+shopt -s autocd
+
+# enable extended pattern matching
+shopt -s extglob
+
+# aliases
+alias ls='ls -alh --color'
+
+# simple bash prompt
+PS1='\w \$ '
