@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "coc-sh": ">=1.2.4"
+  }
+}

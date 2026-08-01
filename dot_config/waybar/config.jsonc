@@ -1,0 +1,45 @@
+{
+    "height": 28,
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "battery"
+    ],
+    "sway/workspaces": {
+        "all-outputs": true,
+        "format": "{name}"
+    },
+    "clock": {
+        "format": "{:%A %I:%M}",
+        "tooltip-format": "<tt>{calendar}</tt>"
+    },
+    "battery": {
+        "interval": 60,
+        "format": "{icon}",
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        }
+    },
+    "network": {
+        "format-wifi": "  ",
+        "format-ethernet": "󰈁",
+        "format-disconnected": "󰖪"
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": " ",
+        "format-bluetooth": "󰂯",
+        "format-bluetooth-muted": "Muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "foot -e wiremix"
+    }
+}

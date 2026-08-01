@@ -1,0 +1,39 @@
+* {
+    color: #ffffff;
+    font-family: JetBrains Mono Nerd Font, monospace;
+    font-size: 18px;
+}
+
+#waybar {
+    background-color: #000000;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.hover,
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: #6c6c6c;
+}
+
+#battery,
+#pulseaudio {
+    padding: 0px 6px;
+}
+
+#network {
+    padding: 0px 4px;
+}
