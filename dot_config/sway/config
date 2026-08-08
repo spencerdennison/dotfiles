@@ -74,7 +74,7 @@ bindsym $mod+Shift+4 move container to workspace number 4
 
 assign [app_id="foot"] workspace number 1
 assign [app_id="librewolf"] workspace number 2
-assign [class="discord"] workspace number 3
+assign [app_id="discord"] workspace number 3
 assign [class="steam"] workspace number 4
 
 mode "resize" {
@@ -116,3 +116,4 @@ seat seat0 xcursor_theme Hackneyed
 
 # misc
 exec mako
+include /etc/sway/config.d/* 
