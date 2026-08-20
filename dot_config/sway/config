@@ -6,7 +6,7 @@ set $down j
 set $up k
 set $right l
 
-set $browser librewolf
+set $browser brave
 set $terminal foot
 set $utility discord
 set $game steam
@@ -73,7 +73,7 @@ bindsym $mod+Shift+3 move container to workspace number 3
 bindsym $mod+Shift+4 move container to workspace number 4
 
 assign [app_id="foot"] workspace number 1
-assign [app_id="librewolf"] workspace number 2
+assign [app_id="brave-browser"] workspace number 2
 assign [app_id="discord"] workspace number 3
 assign [class="steam"] workspace number 4
 
@@ -116,4 +116,7 @@ seat seat0 xcursor_theme Hackneyed
 
 # misc
 exec mako
+exec_always {
+    export GTK_THEME="Adwaita:dark"
+}
 include /etc/sway/config.d/* 
